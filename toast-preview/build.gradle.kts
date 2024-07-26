@@ -42,13 +42,14 @@ dependencies {
 
 }
 
+
 afterEvaluate {
     publishing {
         publications {
             register<MavenPublication>("release") {
                 groupId = "com.github.Sruz0302"
                 artifactId = "toast-preview"
-                version = "1.0"
+                version = "1.0.1"
 
                 afterEvaluate {
                     from(components["release"])
